@@ -1,8 +1,8 @@
-from flask import Flask, jsonify
+from flask import Flask
 import json
 from datetime import datetime
 
-from database import add_data_to_db, get_data_from_db
+from database import  get_data_from_db
 from predictor import predict_day, predict_monthly
 from utils import day_on_month, next_day, past_day
 
